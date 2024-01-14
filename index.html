@@ -1,130 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Team TurboTitans</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-      /* Add custom styles here */
-      .logo-container1 img {
-    display: inline-block;
-    border-radius: 50%;
-    /* Add additional styling if needed */
-}
 
-.logo-container {
-    text-align: center;
-}
-      /* Header */
-      header {
-        background-color:  #95c6ff;
-        padding: 20px;
-        text-align: center;
-      }
-  
-      header h1 {
-        font-size: 36px;
-        color: #FFF;
-        margin-bottom: 10px;
-      }
-  
-      header p {
-        font-size: 18px;
-        color: #FFF;
-      }
-  
-      /* Main Content */
-      main {
-        padding: 20px;
-      }
-  
-      main h2 {
-        font-size: 24px;
-        margin-bottom: 10px;
-        color: #F75D45;
-      }
-  
-      main p {
-        margin-bottom: 20px;
-      }
-  
-      /* Footer */
-      footer {
-        background-color: #333;
-        padding: 10px;
-        text-align: center;
-        color: #FFF;
-        font-size: 14px;
-      }
-  
-      footer a {
-        color: #FFF;
-        text-decoration: none;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>
-        <div class="logo-container1">
-          <img src= "group logo.jpg" alt="Team Turbo Titans Logo"width="300" height="300">
-      </div> 
-      </h1>
-      
-    </header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="aboutus.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sponsors.html">Our Sponsors</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="feedback.html">Feedback</a>
-            </li>
-            <li class="nav-item">
-                    <a class="nav-link" href="newfile.html">Support Us</a>
-                  </li>
-          </ul>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team TurboTitans</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Header */
+    header {
+      background-color: #95c6ff;
+      padding: 40px; /* Increased padding for a bigger header */
+      text-align: center;
+    }
+
+    .header-text {
+      font-size: 24px;
+      color: #FFF;
+      margin-bottom: 10px;
+    }
+
+    .logo-container {
+      display: flex;
+      justify-content: left;
+      align-items: left;
+      margin-top: 20px;
+    }
+
+    .logo-container img {
+      border-radius: 50%;
+      margin: 0 10px;
+      width: 80px;
+      height: 80px;
+    }
+
+    /* Navigation */
+    .navbar {
+      background-color: #343a40;
+    }
+
+    .navbar-brand {
+      color: #FFF;
+      font-weight: bold;
+    }
+
+    .navbar-toggler-icon {
+      background-color: #FFF;
+    }
+
+    .navbar-nav .nav-link {
+      color: #FFF;
+    }
+
+    /* Main Content */
+    main {
+      padding: 20px;
+    }
+
+    main h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #F75D45;
+    }
+
+    main p {
+      margin-bottom: 20px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+      color: #FFF;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #FFF;
+      text-decoration: none;
+    }
+
+    /* Achievements Section */
+    .achievements-section {
+      background-color: #87CEEB; /* Very faint sky blue background */
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .achievements-section img {
+      width: 100px; /* Smaller size for the images */
+      height: auto; /* Maintain aspect ratio */
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="bg-white text-center py-3">
+    <div class="d-flex align-items-center justify-content-center">
+      <div class="logo-container">
+        <img src="E:\REEV\group logo.jpg" alt="Team Turbo Titans Logo" class="mr-3">
+        <img src="c:\Users\gadge\OneDrive\Desktop\github\teamturbotitans.github.io\REEV LOGO.jpeg" alt="Reev Logo"
+          class="mr-3">
+        <img src="C:\Users\gadge\OneDrive\Desktop\github\teamturbotitans.github.io\avcoe logo.png" alt="AVCOE Logo">
       </div>
-    </nav>
+      <div class="ml-3">
+        <h1 class="display-4 font-weight-bold">Team Turbo Titans</h1>
+        <p class="lead">Amrutvahini College of Engineering, Sangamner</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Our Sponsors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Feedback</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <main>
-<p>Team Turbo Titans from Amrutvahini College of Engineering is an enthusiastic and dedicated group
-  of engineering students passionately participating in the REEV (Range-Extended Electric Vehicle)
-   competition organized by SAE India.</p>
-    <h1>
-      <div class="logo-container">
-        <img src= "Group photo.jpg" alt="Team Turbo Titans Logo"width="500" height="300">
-    </div> 
-    </h1>
-    <h1>
-      Our Achievements:
-      <div class="logo-container">
-        <img src= "certificate.png" alt="Team Turbo Titans Logo"width="500" height="300">
-    </div> 
-    </h1>
-    <p>Congratulations on achieving the second rank in the SAE India REEV (virtuals) competition!
-       This remarkable accomplishment showcases our team's dedication, expertise, and innovative approach
-        in the field of Hybrid electric vehicle engineering. Placing second among teams from across India
-         emphasizes our commitment to excellence and our relentless pursuit of advancing sustainable 
-         mobility solutions. This achievement is a testament to our hard work, technical proficiency, and 
-         the collaborative spirit that drives us toward redefining the future of electric vehicles.</p>
+    <p>Team Turbo Titans from Amrutvahini College of Engineering is an enthusiastic and dedicated group of engineering
+      students passionately participating in the REEV (Range-Extended Electric Vehicle) competition organized by SAE
+      India.</p>
+    <h2>Our Achievements</h2>
+    <div id="image-slideshow" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner achievements-section">
+        <div class="carousel-item active">
+          <img src="E:\REEV\Group photo.jpg" class="d-block" alt="Team Turbo Titans Group Photo">
+        </div>
+        <div class="carousel-item">
+          <img src="E:\REEV\certificate.png" class="d-block" alt="Achievement Certificate">
+        </div>
+        <!-- Add more slides as needed -->
+      </div>
+      <a class="carousel-control-prev" href="#image-slideshow" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#image-slideshow" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <p>Congratulations on achieving the second rank in the SAE India REEV (virtuals) competition! This remarkable
+      accomplishment showcases our team's dedication, expertise, and innovative approach in the field of Hybrid electric
+      vehicle engineering. Placing second among teams from across India emphasizes our commitment to excellence and our
+      relentless pursuit of advancing sustainable mobility solutions. This achievement is a testament to our hard work,
+      technical proficiency, and the collaborative spirit that drives us toward redefining the future of electric
+      vehicles.</p>
+    <p>Team Turbo Titans from Amrutvahini College of Engineering is an enthusiastic and dedicated group of engineering
+      students passionately participating in the REEV (Range-Extended Electric Vehicle) competition organized by SAE
+      India. Comprising bright minds with a shared vision for innovation in electric mobility, the team is committed to
+      revolutionizing the automotive industry through sustainable and high-performance electric vehicles.</p>
+    <p>Driven by a blend of technical expertise, creativity, and a pursuit of excellence, the Turbo Titans aim to
+      redefine the boundaries of electric vehicle technology. Their participation in the competition signifies their
+      dedication to advancing the development of range-extended electric vehicles, aiming to create innovative solutions
+      that prioritize efficiency, sustainability, and performance.</p>
+    <p>With a strong focus on teamwork, problem-solving, and practical application of engineering principles, the Turbo
+      Titans are geared up to showcase their skills, knowledge, and innovative ideas in building an exceptional
+      range-extended electric vehicle. Their involvement in the REEV competition stands as a testament to their commitment
+      to shaping the future of mobility and contributing to a greener tomorrow.</p>
+    <p>We are a team of 25 students and 5 systems, including:</p>
+    <h2>1. CHASSIS DESIGN SYSTEM</h2>
+    <p>Designing a chassis is like crafting the backbone of a vehicle or a machine. It’s the skeletal framework that
+      supports and holds together all the critical components. A well-thought-out chassis design considers factors like
+      structural integrity, weight distribution, material strength, and overall functionality. It’s the canvas upon which
+      the rest of the vehicle or machine is built, influencing its performance, durability, and sometimes even its
+      aesthetic appeal.</p>
+    <p><strong>Team Members:</strong> 1. Sanap Prasen. 2. Gadge Bipin. 3. Devmunde Mauli. 4. Mehetre Omkar.</p>
+    <h2>2. ELECTRICAL SYSTEM</h2>
+    <p>An electrical system is akin to sculpting the nervous system of a machine or device. It serves as the vital network
+      that conducts power and information, much like nerves transmitting signals within a body. An adeptly designed
+      electrical system considers crucial elements such as voltage requirements, power distribution, circuit protection,
+      and robustness. It acts as the backbone for all electronic components, ensuring seamless functionality and
+      efficiency.</p>
+    <p><strong>Team Members:</strong> 1. Pathare Sanket. 2. Sanket.</p>
+    <h2>3. TRANSMISSION SYSTEM</h2>
+    <p>The transmission system of a range-extended electric vehicle plays a pivotal role in optimizing power
+      distribution. Integrating an electric motor generator, it offers seamless transition between battery power and an
+      onboard generator, often powered by a combustion engine. This innovative setup enhances the vehicle's overall range
+      by efficiently recharging the battery while in motion.</p>
+    <p>The transmission system is vital for range-extended electric vehicles (REEVs) as it optimizes power distribution
+      between the electric motor and range-extending generator. This seamless coordination enhances energy efficiency,
+      maximizes electric driving range, and ensures optimal performance during extended journeys. The transmission system
+      allows for dynamic adjustments, providing smooth transitions between electric and generator modes, thereby
+      enhancing overall driving experience and making REEVs a practical and versatile solution for sustainable
+      mobility.</p>
+    <h2>4. STEERING SYSTEM</h2>
+    <p>The steering system in a vehicle allows the driver to control the direction of movement by turning the wheels. The
+      steering system converts rotary motion of the steering wheel into the angular turn of wheels to guide the vehicle
+      in the required direction. The rack and pinion steering system is one of the most prevalent types of steering
+      systems in modern vehicles. It offers direct feedback, allowing drivers to feel the road better and requires less
+      maintenance than other systems.</p>
+    <p>The primary components include: Steering wheel, steering column, tie rod, rack and pinion, steering arm, etc.</p>
   </main>
 
   <footer>
-    <p>&copy; 2024 Range extended electric vehicles. All rights reserve.</p>
+    <p>&copy; 2024 Range extended electric vehicles. All rights reserved.</p>
   </footer>
 
-  <script src="scripts.js"></script> <!-- If you have JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.carousel').carousel({
+        interval: 2000 // Set interval in milliseconds (2 seconds in this example)
+      });
+    });
+  </script>
 </body>
+
 </html>
