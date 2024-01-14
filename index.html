@@ -89,9 +89,15 @@
     }
 
     .achievements-section img {
-      width: 100px; /* Smaller size for the images */
-      height: auto; /* Maintain aspect ratio */
-      margin-right: 10px;
+      width: 300px; /* Width of 300 pixels */
+      height: 200px; /* Height of 200 pixels */
+      margin: auto; /* Center the image */
+      display: block;
+      cursor: pointer; /* Add cursor pointer for clickable images */
+    }
+
+    .carousel-inner {
+      text-align: center; /* Center the images */
     }
   </style>
 </head>
@@ -152,9 +158,9 @@
     <p>Team Turbo Titans from Amrutvahini College of Engineering is an enthusiastic and dedicated group of engineering
       students passionately participating in the REEV (Range-Extended Electric Vehicle) competition organized by SAE
       India.</p>
-    <h2>Our Achievements</h2>
-    <div id="image-slideshow" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner achievements-section">
+  <h2>Our Achievements</h2>
+    <div id="image-slideshow" class="carousel slide achievements-section" data-ride="carousel">
+      <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="E:\REEV\Group photo.jpg" class="d-block" alt="Team Turbo Titans Group Photo">
         </div>
@@ -225,8 +231,8 @@
     <p>The primary components include: Steering wheel, steering column, tie rod, rack and pinion, steering arm, etc.</p>
   </main>
 
-  <footer>
-    <p>&copy; 2024 Range extended electric vehicles. All rights reserved.</p>
+ <footer>
+    <p>&copy; 2024 Team TurboTitans. All rights reserved.</p>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -237,8 +243,27 @@
       $('.carousel').carousel({
         interval: 2000 // Set interval in milliseconds (2 seconds in this example)
       });
+
+      // Display images in original scale when clicked
+      $('.achievements-section img').on('click', function () {
+        $('#imageModal').modal('show');
+        $('#imageModal img').attr('src', $(this).attr('src'));
+      });
     });
   </script>
+
+  <!-- Modal for displaying images in original scale -->
+  <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img src="" class="img-fluid" alt="Modal Image">
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
+
