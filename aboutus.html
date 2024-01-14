@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Team TurboTitans</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Include Chart.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
     /* Header */
     header {
       background-color: #95c6ff;
-      padding: 40px; /* Increased padding for a bigger header */
+      padding: 40px;
       text-align: center;
     }
 
@@ -83,21 +85,39 @@
 
     /* Achievements Section */
     .achievements-section {
-      background-color: #87CEEB; /* Very faint sky blue background */
+      background-color: #87CEEB;
       padding: 20px;
       margin-top: 20px;
     }
 
     .achievements-section img {
-      width: 300px; /* Width of 300 pixels */
-      height: 200px; /* Height of 200 pixels */
-      margin: auto; /* Center the image */
+      width: 300px;
+      height: 200px;
+      margin: auto;
       display: block;
-      cursor: pointer; /* Add cursor pointer for clickable images */
+      cursor: pointer;
     }
 
     .carousel-inner {
-      text-align: center; /* Center the images */
+      text-align: center;
+    }
+
+    /* Chart Section */
+    .chart-section {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    /* Total Cost Section */
+    .total-cost-section {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .total-cost {
+      font-size: 18px;
+      font-weight: bold;
+      color: #F75D45;
     }
   </style>
 </head>
@@ -108,7 +128,8 @@
     <div class="d-flex align-items-center justify-content-center">
       <div class="logo-container">
         <img src="group logo.jpg" alt="Team Turbo Titans Logo" class="mr-3">
-        <img src="REEV LOGO.jpeg" alt="Reev Logo" class="mr-3">
+        <img src="REEV LOGO.jpeg" alt="Reev Logo"
+          class="mr-3">
         <img src="avcoe logo.png" alt="AVCOE Logo">
       </div>
       <div class="ml-3">
@@ -120,10 +141,6 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -134,31 +151,23 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="sponsors.html">Our Sponsors</a>
-           <li class="nav-item">
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="supportus.html">Support Us</a>
           </li>
-            </li>
           <li class="nav-item">
             <a class="nav-link" href="https://saeindia.org/bangaluru-section/reev/">REEV</a>
-          </li>
-           <li class="nav-item">
-            <a class="nav-link" href="ourteam.html">Our Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Gallery</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="feedback.html">Feedback</a>
           </li>
-          
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
-
-
-
-
 
   <main>
     <section>
@@ -226,9 +235,30 @@ HEVs often incorporate sensors for environmental factors like ambient temperatur
     </section>
   </main>
 
-<footer>
-    <p>&copy; 2024 Team TurboTitans. All rights reserved.</p>
-  </footer>
+ <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p>&copy; 2024 Team TurboTitans. All rights reserved.</p>
+      </div>
+      <div class="col-md-6 text-right">
+        <p>Contact Us:</p>
+        <a href="https://www.instagram.com/_team_turbotitans_" target="_blank">
+          <img src="path/to/instagram-logo.png" alt="Instagram Logo" height="20" width="20">
+        </a>
+        <span> _team_turbotitans_</span>
+        <br>
+        <span>Email: teamturbotitans@gmail.com</span>
+        <br>
+        <span>Mobile: +91 95940 35057</span>
+      </div>
+    </div>
+    <p class="small-text">
+      This website is developed by Gadge Bipin (<a href="mailto:gadgebipin@gmail.com">contact</a>, <a href="https://www.instagram.com/bipingadge" target="_blank">insta</a>, mobile no: 9373986141).
+    </p>
+  </div>
+</footer>
+
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
@@ -259,5 +289,7 @@ HEVs often incorporate sensors for environmental factors like ambient temperatur
     </div>
   </div>
 </body>
+
+</html>
 
 </html>
